@@ -1,0 +1,16 @@
+ptr<int> f;
+public int udf() {
+  int n = 4;
+  ptr<int> f = nullptr;
+  f = objects(n);
+  writeln " ";
+  for (int i = 0; i < n; i = i + 1) { f[i] = 2; }
+  writeln " ";
+  for (int i = 0; i < n; i = i + 1) { writeln f[i]; }
+  writeln "\n";
+  for (int i = 0; i < n; i = i + 1) { f[i] = 6 / f[i]; }
+  writeln " ";
+  for (int i = 0; i < n; i = i + 1) { writeln f[i]; }
+  return 0;
+}
+

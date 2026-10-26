@@ -1,0 +1,4 @@
+public int udf() { 
+	writeln "X \09 Y \09 Z \n"; 
+	return 0; 
+}
